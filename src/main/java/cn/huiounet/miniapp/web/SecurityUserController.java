@@ -25,6 +25,8 @@ public class SecurityUserController {
         user.setRole("USER");
         if(username.equals("lry")){
             user.setRole("admin");
+        }else {
+
         }
         userService.saveUser(user);
     }

